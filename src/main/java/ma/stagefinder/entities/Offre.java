@@ -46,10 +46,10 @@ public class Offre {
 //    @OneToMany(mappedBy = "offre")
 //    private List<NotesOffre> notes;
 
-//    @OneToMany(mappedBy = "offre")
-//    private List<Favoris> favoris;
+    @OneToMany(mappedBy = "offre")
+    private List<Favoris> favoris;
 
-    @ManyToOne
-    @JoinColumn(name = "publie_par_id")
-    private User publiePar;
+//    @ManyToOne
+//    @JoinColumn(name = "publie_par_id")
+//    private User publiePar;
 }

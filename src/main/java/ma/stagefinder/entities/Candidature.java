@@ -27,13 +27,12 @@ public class Candidature {
     @Column(name = "cv_choisi")
     private String cvChoisi;
 
-    private String commentaires;
 
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
 
-//    @ManyToOne
-//    @JoinColumn(name = "offre_id")
-//    private Offre offre;
+    @ManyToOne
+    @JoinColumn(name = "offre_id")
+    private Offre offre;
 }
