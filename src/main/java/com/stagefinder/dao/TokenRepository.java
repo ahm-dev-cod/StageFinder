@@ -1,5 +1,6 @@
 package com.stagefinder.dao;
 
+
 import com.stagefinder.entities.MyUser;
 import com.stagefinder.entities.Token;
 import org.springframework.data.jpa.repository.JpaRepository;
